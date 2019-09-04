@@ -1,0 +1,19 @@
+--cpu Cortex-M0
+".\objects\nrf24.o"
+".\objects\main.o"
+".\objects\stm32f0xx_it.o"
+".\objects\system_stm32f0xx.o"
+".\objects\stm32f0xx_exti.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_misc.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_spi.o"
+".\objects\stm32f0xx_syscfg.o"
+".\objects\stm32f0xx_tim.o"
+".\objects\stm32f0xx_usart.o"
+".\objects\startup_stm32f030.o"
+".\objects\utils.o"
+--strict --scatter ".\Objects\20170331_First.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\20170331_First.map" -o .\Objects\20170331_First.axf
